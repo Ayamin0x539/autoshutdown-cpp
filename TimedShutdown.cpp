@@ -28,7 +28,7 @@ void zerocheck(int *x) {
 int main(int argc, char *argv[]) {
 	bool prompt;
 	int i;
-	int *p = &i;
+	int *p = &i; // we'll pass this pointer to i into zerocheck(int).
 	int c = 0; // count up from c to i; when c hits i, shut down.
 
 
@@ -78,9 +78,6 @@ int main(int argc, char *argv[]) {
 	Sleep(1000);
 
 	system("shutdown /s /t 1");
-
-	getchar();
-	getchar();
 }
 
 /*
